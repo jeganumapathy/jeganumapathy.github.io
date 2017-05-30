@@ -3,6 +3,6 @@
    "name":"A green door",
    "price":12.50,
    "tags":[
-      "https://www.youtube.com/watch?v=Uv2NRpG76Pg"
+      "https://youtu.be/3txQSi1QsaE"
    ]
 }
