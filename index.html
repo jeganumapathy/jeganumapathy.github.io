@@ -593,7 +593,7 @@
                 <i class="bx bx-file"></i>
               </div>
               <h4><a href="">AWS</a></h4>
-              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+              <p>Build, Deploy, and Manage Websites, Apps or Processes On AWS' Secure, Reliable Network. Sign Up for a Free Account & Experience AWS' Secure, Reliable, Scalable Services</p>
             </div>
           </div>
 
@@ -610,7 +610,7 @@
                 <i class="bx bx-file"></i>
               </div>
               <h4><a href="">Firebase</a></h4>
-              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+              <p>Firebase provides tools to grow your app and business, for startups & global enterprises. Get your app up and running quickly & securely with fully managed backend infrastructure</p>
             </div>
           </div>
 
@@ -626,7 +626,7 @@
                 <i class="bx bx-tachometer"></i>
               </div>
               <h4><a href="">Web App</a></h4>
-              <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+              <p>A Web application (Web app) is an application program that is stored on a remote server and delivered over the Internet through a browser interface. Web services are Web apps by definition and many, although not all, websites contain Web apps.              </p>
             </div>
           </div>
 
@@ -641,7 +641,8 @@
                 <i class="bx bx-layer"></i>
               </div>
               <h4><a href="">Mobile</a></h4>
-              <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+              <p>Apps made for the Apple App Store differ in various ways from apps made for the Google Play Store:
+                </p>
             </div>
           </div>
 
@@ -655,8 +656,8 @@
                 </svg>
                 <i class="bx bx-slideshow"></i>
               </div>
-              <h4><a href="">Data</a></h4>
-              <p>Quis consequatur saepe eligendi voluptatem consequatur dolor consequuntur</p>
+              <h4><a href="">MongoDB</a></h4>
+              <p>MongoDB is a source-available cross-platform document-oriented database program. Classified as a NoSQL database program</p>
             </div>
           </div>
 
@@ -810,7 +811,7 @@
 
           <div class="col-lg-8 mt-5 mt-lg-0">
 
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <form  method="post" role="form" class="php-email-form">
               <div class="row">
                 <div class="col-md-6 form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
@@ -830,7 +831,8 @@
                 <div class="error-message"></div>
                 <div class="sent-message">Your message has been sent. Thank you!</div>
               </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
+              <div class="text-center"><input type="button" value="Send Email"
+                onclick="sendEmail()" /></div>
             </form>
 
           </div>
@@ -899,6 +901,27 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src=
+    "https://smtpjs.com/v3/smtp.js">  
+  </script>
+
+
+  <script type="text/javascript">
+    function sendEmail() {
+      Email.send({
+        Host: "smtp.elasticemail.com",
+        Username: "thalajegan@gmail.com",
+        Password: "F0D16FD1B839E52169B9373AFCEB948008A6",
+        To: "u.jegan@yahoo.co.in",
+        From: "thalajegan@gmail.com",
+        Subject: "Sending Email using javascript",
+        Body: "Well that was easy!!",
+      })
+        .then(function (message) {
+          alert("mail sent successfully"+message)
+        });
+    }
+  </script>
 
 </body>
 
